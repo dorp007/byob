@@ -1,6 +1,6 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-'Command & Control (Build Your Own Botnet)'
+!/usr/bin/python
+ -*- coding: utf-8 -*-
+
 from __future__ import print_function
 
 # standard library
@@ -21,7 +21,7 @@ import subprocess
 import collections
 
 http_serv_mod = "SimpleHTTPServer"
-if sys.version_info[0] > 2:
+if sys.version_info[0] != 2:
     http_serv_mod = "http.server"
     sys.path.append('core')
     sys.path.append('modules')
@@ -57,7 +57,7 @@ __banner__ = """
 88                                  88
 88,dPPYba,  8b       d8  ,adPPYba,  88,dPPYba,
 88P'    "8a `8b     d8' a8"     "8a 88P'    "8a
-88       d8  `8b   d8'  8b       d8 88       d8
+88 (ツ)   d8  `8b   d8' 8b  (ツ)  d8 88 (ツ)  d8
 88b,   ,a8"   `8b,d8'   "8a,   ,a8" 88b,   ,a8"
 8Y"Ybbd8"'      Y88'     `"YbbdP"'  8Y"Ybbd8"'
                 d8'
@@ -70,7 +70,7 @@ def main():
 
     parser = argparse.ArgumentParser(
         prog='server.py',
-        description="Command & Control Server (Build Your Own Botnet)"
+        description="C&CS"
     )
 
     parser.add_argument(
