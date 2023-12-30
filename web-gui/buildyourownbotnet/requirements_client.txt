@@ -1,6 +1,6 @@
 mss==5.0.0;python_version>'3'
 WMI==1.4.9;python_version>'3'
-numpy==1.18.1;python_version>'3'
+numpy==1.22.2;python_version>'3'
 pyxhook==1.0.0;python_version>'3'
 twilio==6.35.4;python_version>'3'
 colorama==0.4.3;python_version>'3'
@@ -9,13 +9,16 @@ PyInstaller==3.6;python_version>'3'
 
 mss==3.3.0;python_version<'3'
 WMI==1.4.9;python_version<'3'
-numpy==1.15.2;python_version<'3'
+numpy==1.22.2;python_version<'3'
 pyxhook==1.0.0;python_version<'3'
 twilio==6.14.0;python_version<'3'
 colorama==0.3.9;python_version<'3'
 requests==2.20.0;python_version<'3'
-PyInstaller==3.3.1;python_version<'3'
+PyInstaller==3.6;python_version<'3'
 
-opencv-python==3.4.3.18;python_version<'3'
+opencv-python==4.8.1.78;python_version<'3'
 
 pypiwin32==223;sys.platform=='win32'
+certifi>=2023.7.22 # not directly required, pinned by Snyk to avoid a vulnerability
+pyjwt>=2.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=1.25.9 # not directly required, pinned by Snyk to avoid a vulnerability
