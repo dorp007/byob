@@ -26,3 +26,4 @@ opencv-python==3.4.3.18;python_version<'3'
 
 pyHook==1.5.1;sys.platform=='win32'
 pypiwin32==223;sys.platform=='win32'
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
